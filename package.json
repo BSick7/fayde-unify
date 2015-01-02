@@ -22,7 +22,13 @@
   },
   "homepage": "https://github.com/BSick7/fayde-unify",
   "bin": {
-    "fayde": "bin/fayde"
+    "fayde": "bin/fayde.js"
   },
-  "preferGlobal": true
+  "preferGlobal": true,
+  "devDependencies": {
+    "bluebird": "^2.5.3",
+    "chalk": "^0.5.1",
+    "inquirer": "^0.8.0",
+    "optimist": "^0.6.1"
+  }
 }
