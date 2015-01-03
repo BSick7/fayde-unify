@@ -7,7 +7,7 @@ var argv = require('optimist').argv,
     lib = require('../lib');
 
 var config = {
-    verbose: true
+    verbose: !!argv.verbose || !!argv.v
 };
 
 lib.interactive(argv, config, lib.unify("unify.json"));
