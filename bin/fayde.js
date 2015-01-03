@@ -10,9 +10,4 @@ var config = {
     verbose: true
 };
 
-//TODO: Replace with unify object
-var unify = {
-
-};
-
-lib.interactive(argv, config, unify);
+lib.interactive(argv, config, lib.unify("unify.json"));
