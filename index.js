@@ -1,6 +1,10 @@
-var commands = require('./commands'),
-    renderer = require('./renderer'),
-    Unify = require('./unify');
+var commands = require('./lib/commands/index'),
+    renderer = require('./lib/renderer/index'),
+    Unify = require('./lib/unify/index');
+
+exports.commands = commands;
+exports.renderer = renderer;
+exports.Unify = Unify;
 
 exports.interactive = function (argv, config, unify) {
     var rend = getRenderer(config);

@@ -4,10 +4,10 @@
 process.bin = process.title = 'fayde';
 
 var argv = require('optimist').argv,
-    lib = require('../lib');
+    faydeunify = require('../index.js');
 
 var config = {
     verbose: !!argv.verbose || !!argv.v
 };
 
-lib.interactive(argv, config, lib.unify("unify.json"));
+faydeunify.interactive(argv, config, faydeunify.unify("unify.json"));
