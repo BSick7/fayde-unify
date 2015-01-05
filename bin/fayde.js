@@ -11,4 +11,4 @@ var config = {
     verbose: argv.v || argv.verbose
 };
 
-faydeunify.interactive(argv._[0], config, faydeunify.unify("unify.json"));
+faydeunify.interactive(argv._[0], config, new faydeunify.JsonFile("unify.json"));
