@@ -1,0 +1,15 @@
+{
+  "name": "fayde-unify",
+  "client": {
+    "file": "fayde.json",
+    "exclude": [
+      "self"
+    ]
+  },
+  "type": "lib",
+  "dist": "dist/fayde-unify.js",
+  "library": {
+    "type": "export",
+    "exports": "fayde-unify"
+  }
+}
