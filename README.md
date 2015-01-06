@@ -20,23 +20,23 @@ $ unify init
 ### Installing libraries
 
 ```
-# install dependencies listed in bower.json and update unify.json records
+# install dependencies listed in bower.json and add to unify.json
 $ unify install
 
-# install a library and add it to unify.json
+# install a library and add to unify.json
 $ unify install <package> --save
 
-# install specific version of a package and add it to unify.json
+# install specific version of a package and add to unify.json
 $ unify install <package>#<version> --save
 ```
 
 ### Updating libraries
 
 ```
-# update dependencies listed in bower.json and update unify.json records
+# update dependencies listed in bower.json and update unify.json
 $ unify update
 
-# update library and update records in unify.json
+# update library and update unify.json
 $ unify update <package>
 ```
 
