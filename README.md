@@ -14,24 +14,24 @@ Unify manages `fayde.json` as metadata to resolve libraries (and resources).
 ### Initializing
 
 ```
-$ fayde init
+$ unify init
 ```
 
 ### Installing libraries
 
 ```
 # install dependencies listed in unify.json
-$ fayde install
+$ unify install
 
 # install a library and add it to unify.json
-$ fayde install <package> --save
+$ unify install <package> --save
 
 # install specific version of a package and add it to unify.json
-$ fayde install <package>#<version> --save
+$ unify install <package>#<version> --save
 ```
 
 ### Uninstalling libraries
 
 ```
-$ fayde uninstall <package-name>
+$ unify uninstall <package-name>
 ```
