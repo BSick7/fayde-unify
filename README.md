@@ -3,11 +3,11 @@
 This tool automates configuration of Fayde applications.
 
 Unify relies on bower as its package manager.
-When developing applications, instead of using `bower install`, use `fayde install`.
+When developing applications, instead of using `bower install`, use `unify install`.
 
 Unify looks for `unify.json` in the resolved library.  If found, metadata is used to include the library in the Fayde application.
 
-Unify manages `fayde.json` as metadata to resolve libraries (and resources).
+Unify manages `fayde.json` as metadata to resolve client libraries (and resources).
 
 ## Usage
 
