@@ -7,7 +7,7 @@ When developing applications, instead of using `bower install`, use `unify insta
 
 Unify looks for `unify.json` in the resolved library.  If found, metadata is used to include the library in the Fayde application.
 
-Unify administers [`fayde.json`](https://github.com/bsick7/fayde/wiki/Fayde.json).
+Unify administers [`fayde.json`](https://github.com/bsick7/fayde/wiki/Fayde.json) to properly set up client libraries.
 
 ## Usage
 
