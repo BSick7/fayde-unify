@@ -1,7 +1,7 @@
 {
   "name": "fayde-unify",
   "client": {
-    "file": "fayde.json",
+    "files": ["fayde.json"],
     "exclude": [
       "self"
     ]

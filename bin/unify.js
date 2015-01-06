@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 'use strict';
 
-process.bin = process.title = 'fayde';
+process.bin = process.title = 'unify';
 
 var optimist = require('optimist'),
     faydeunify = require('../lib');
