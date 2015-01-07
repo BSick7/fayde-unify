@@ -1,6 +1,6 @@
 {
   "name": "fayde-unify",
-  "version": "0.1.6",
+  "version": "0.2.0",
   "description": "Tool for wiring Fayde applications",
   "main": "lib",
   "scripts": {
