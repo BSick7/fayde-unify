@@ -1,47 +1,49 @@
 ## Fayde Unify
 
-This tool automates configuration of Fayde applications.
+This tool unifies bower, requirejs, and typescript declarations.
 
-Unify relies on bower as its package manager.
-When developing applications, instead of using `bower install`, use `unify install`.
+Running `unify` will update client configuration files.  Dependencies are gathered from `bower.json` and configured using `unify.json`.
 
-Unify looks for `unify.json` in the resolved library.  If found, metadata is used to include the library in the Fayde application.
-
-Unify administers [`fayde.json`](https://github.com/bsick7/fayde/wiki/Fayde.json) to properly set up client libraries.
+Libraries without `unify.json` can still be used, but rely on default configuration.
 
 ## Usage
 
-### Initializing
+## Initializing
+
+Running the following command will initialize a `unify.json` file.
 
 ```
 $ unify init
 ```
 
-### Installing libraries
+## Bower integration
+
+Bower can be configured to update whenever dependencies are installed/uninstalled.
+
+You can run `unify bower` to automatically configure your `.bowerrc` similar to below.
 
 ```
-# install dependencies listed in bower.json and add to unify.json
-$ unify install
+# .bowerrc
 
-# install a library and add to unify.json
-$ unify install <package> --save
-
-# install specific version of a package and add to unify.json
-$ unify install <package>#<version> --save
-```
-
-### Updating libraries
+{
+    "scripts": {
+        "postinstall": "unify update",
+        "preinstall": "unify update -un %"
+    }
+}
 
 ```
-# update dependencies listed in bower.json and update unify.json
-$ unify update
 
-# update library and update unify.json
-$ unify update <package>
+## Updating
+
+If you would like to manually update [`fayde.json`](https://github.com/bsick7/fayde/wiki/Fayde.json) files, execute `unify update` from the same directory as `unify.json`.
+
+## Excluding
+
+You can configure unify to ignore library or library dependencies.
+
 ```
-
-### Uninstalling libraries
-
-```
-$ unify uninstall <package-name>
+$ unify exclude --self
+$ unify exclude --deps
+$ unify exclude --self --deps
 ```
