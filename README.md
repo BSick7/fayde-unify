@@ -36,7 +36,7 @@ You can run `unify bower` to automatically configure your `.bowerrc` similar to 
 
 ## Updating
 
-If you would like to manually update [`fayde.json`](https://github.com/bsick7/fayde/wiki/Fayde.json) files, execute `unify update` from the same directory as `unify.json`.
+If you would like to update [`fayde.json`](https://github.com/bsick7/fayde/wiki/Fayde.json) files, execute `unify update` from the same directory as `unify.json`.
 
 ## Excluding
 
