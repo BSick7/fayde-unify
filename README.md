@@ -2,7 +2,7 @@
 
 This tool unifies bower, requirejs, and typescript declarations.
 
-Running `unify` will update client configuration files.  Dependencies are gathered from `bower.json` and configured using `unify.json`.
+Running `unify update` will update client configuration files.  Dependencies are gathered from `bower.json` and configured using `unify.json`.
 
 Libraries without `unify.json` can still be used, but rely on default configuration.
 
