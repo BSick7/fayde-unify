@@ -1,6 +1,6 @@
 {
   "name": "fayde-unify",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "description": "Tool for wiring Fayde applications",
   "main": "lib",
   "scripts": {
@@ -8,19 +8,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/BSick7/fayde-unify.git"
+    "url": "https://github.com/wsick/fayde-unify.git"
   },
   "keywords": [
     "fayde",
     "unify",
     "xaml"
   ],
-  "author": "BSick7 <brad.sickles@gmail.com>",
+  "authors": [
+    "BSick7 <brad.sickles@gmail.com>"
+  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/BSick7/fayde-unify/issues"
+    "url": "https://github.com/wsick/fayde-unify/issues"
   },
-  "homepage": "https://github.com/BSick7/fayde-unify",
+  "homepage": "https://github.com/wsick/fayde-unify",
   "bin": {
     "unify": "bin/unify.js"
   },
