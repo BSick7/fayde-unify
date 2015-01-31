@@ -20,15 +20,14 @@ $ unify init
 
 Bower can be configured to update whenever dependencies are installed/uninstalled.
 
-You can run `unify bower` to automatically configure your `.bowerrc` similar to below.
+You can run `unify bower` to automatically configure your `.bowerrc` similar to below.  This command can be run with the `--local` option to utilize a local `fayde-unify` npm module.
 
 ```
 # .bowerrc
 
 {
     "scripts": {
-        "postinstall": "unify update",
-        "preinstall": "unify update -un %"
+        "postinstall": "unify update" //If --local is specified: "(npm bin)/unify update"
     }
 }
 
